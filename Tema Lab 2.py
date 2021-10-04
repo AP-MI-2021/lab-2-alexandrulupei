@@ -1,7 +1,8 @@
 
 print(""""
    1 ,Găsește ultimul număr prim mai mic decât un număr dat.
-   2 , verifica daca un numar este palindrom.
+   2 ,Verifica daca un numar este palindrom.
+   3 ,Calculeaza Combinari de n luate cate k
    b ,Inapoi la meniu
    x, Iesire
    """"")
@@ -73,6 +74,12 @@ while True:
 
 
         def get_n_choose_k(n: int, k: int):
+            '''
+        Calculeaza combinari de n luate cate k
+            :param n: nr intreg
+            :param k: nr intreg
+            :return: Combinari de n luate cate k
+            '''
             if k > n:
                 return print("Nu exista")
             if n == k:
@@ -101,6 +108,7 @@ while True:
         print(""""
    1 ,Găsește ultimul număr prim mai mic decât un număr dat.
    2 ,Verifica daca un numar este palindrom.
+   3 ,Calculeaza Combinari de n luate cate k
    b, Inapoi la meniu
    x, Iesire
    """"")
