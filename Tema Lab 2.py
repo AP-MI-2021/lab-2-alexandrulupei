@@ -67,6 +67,35 @@ while True:
            print("Este palindrom")
        else: print("Nu este palindrom")
 
+    elif option == "3":
+        import math
+        print("Introduceti un numar")
+
+
+        def get_n_choose_k(n: int, k: int):
+            if k > n:
+                return print("Nu exista")
+            if n == k:
+                return 1
+            factn = 1
+            factk = 1
+            factnk = 1
+            for i in range(1, n):
+                factn = factn * i
+            for j in range(1, k):
+                factk = factk * j
+            for z in range(1, n - k):
+                factnk = factnk * z
+            result = 0
+            result = factn // (factk * factnk)
+            return result
+        def test_get_n_choose_k():
+            assert get_n_choose_k(2, 1) == 1
+            assert get_n_choose_k(10, 4) == 504
+            assert get_n_choose_k(10, 9) == 9
+        a = int(input())
+        b = int(input())
+        print(get_n_choose_k(a,b))
 
     elif option == 'b':
         print(""""
